@@ -48,7 +48,7 @@ export class App {
 		this.useExeptionFilters();
 		await this.prismaService.connect();
 		this.server = this.app.listen(this.port);
-		this.logger.log(`Server runs on https://localhost:${this.port}`);
+		this.logger.log(`Server runs on http://localhost:${this.port}`);
 	}
 
 	public close(): void {
